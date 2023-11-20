@@ -160,10 +160,29 @@ sudo rm -rf /home/bot/.config /home/bot/.local/ ; sudo mkdir /home/bot/.config ;
 ```
 <!-- }}} -->
 
+<!-- {{{ Git -->
+## Git
+<!-- {{{ Account details -->
+### Account details
+```bash
+git config --global user.name ${username}
+git config --global user.email ${email}
+```
+<!-- }}} -->
+
+<!-- {{{ Add remotes -->
+### Add remotes
+```bash
+git remote add $remotename git@${gitserver}:${username}/${reponame}.git
+# ex.: git remote add origin git@github.com:Andy3153/useful-commands.git
+```
+<!-- }}} -->
+<!-- }}} -->
+
 <!-- {{{ UFW -->
-# UFW
+## UFW
 <!-- {{{ Basic -->
-## Basic
+### Basic
 ```bash
 ufw status verbose            # detailed status
 ufw {enable,disable}          # start/stop
@@ -171,7 +190,7 @@ ufw {enable,disable}          # start/stop
 <!-- }}} -->
 
 <!-- {{{ Rules {allow,deny,limit,delete} -->
-## Rules {allow,deny,limit,delete}
+### Rules {allow,deny,limit,delete}
 ```bash
 ufw default deny              # deny everything by default
 ufw allow from 192.168.1.0/24 # allow everything on local networks
@@ -181,9 +200,9 @@ ufw allow 1000:2000/{tcp,udp} # allow port range
 <!-- }}} -->
 
 <!-- {{{ Applications-->
-## Applications
+### Applications
 <!-- {{{ Basic -->
-## Basic
+#### Basic
 ```bash
 ufw app list                # show all applications
 ufw allow SSH               # allow SSH
@@ -191,7 +210,7 @@ ufw allow SSH               # allow SSH
 <!-- }}} -->
 
 <!-- {{{ Adding custom apps -->
-## Adding custom apps
+#### Adding custom apps
 ```ini
 # /etc/ufw/applications.d/custom
 [Terraria]
