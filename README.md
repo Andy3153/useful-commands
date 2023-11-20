@@ -1,4 +1,4 @@
-<!-- vim: set fenc=utf-8 ts=4 sw=4 sts=4 sr et si tw=0 fdm=marker fmr={{{,}}}: -->
+<!-- vim: set fenc=utf-8 ts=4 sw=4 sts=4 sr et si tw=0 fdm=marker fmr={{{,}}} ft=markdown: -->
 
 <!-- {{{ Introduction -->
 # useful-commands
